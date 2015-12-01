@@ -28,4 +28,41 @@ public class CharChecker {
 		return i;
 	}
 
+	char[] toArray(String s) {
+
+		char[] charArray = new char[s.length()];
+
+		for (int i = 0; i < s.length(); i++) {
+
+			charArray[i] = s.charAt(i);
+		}
+
+		return charArray;
+	}
+
+	void printArrayWhile(char[] charArray) {
+
+		int current = 0;
+		int breakAt = charArray.length;
+
+		while (current < breakAt) {
+
+			System.out.println("position " + current + " - value: " + charArray[current]);
+
+			current++;
+
+		}
+
+	}
+
+	void printArrayFor(char[] charArray) {
+
+		for (int i = 0; i < charArray.length; i++) {
+
+			System.out.println("position " + i + " - value: " + charArray[i]);
+
+		}
+
+	}
+
 }
